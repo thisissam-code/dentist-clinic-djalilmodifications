@@ -1,0 +1,92 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7; /* Lighter background */
+  }
+  
+  header {
+    background-color: #4caf50; /* Green header */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: nowrap;
+    min-height: 100vh;
+  }
+  
+  .sidebar {
+    background-color: #a1d6a7;
+    width: 250px;
+    padding: 1rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content {
+    flex: 1;
+    padding: 1.5rem;
+    background-color: white;
+  }
+  
+  footer {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+  }
+  
+  #calendar {
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 8px; /* Rounded corners */
+    background-color: white; /* White background for the calendar */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* FullCalendar Custom Styling */
+  .fc-toolbar {
+    background-color: #4caf50; /* Green toolbar */
+    color: white;
+    padding: 10px;
+  }
+  
+  .fc-daygrid-day-number {
+    font-weight: bold;
+  }
+  
+  .fc-event {
+    background-color: #4caf50; /* Green background for events */
+    border: 2px solid #388e3c; /* Darker green border */
+    color: white;
+    border-radius: 12px; /* Larger rounded corners */
+    padding: 12px 20px; /* Increased padding for larger events */
+    font-size: 16px; /* Increased font size */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Soft shadow */
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    min-height: 50px; /* Minimum height for events */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .fc-event:hover {
+    background-color: #388e3c; /* Darker green on hover */
+    transform: scale(1.1); /* Slightly enlarge the event */
+  }
+  
+  .fc-event-title {
+    font-size: 14px; /* Bigger text for the event title */
+  }
+  
+  .fc-toolbar-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
